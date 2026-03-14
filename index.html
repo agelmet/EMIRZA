@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="el" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Ψυχολόγος - Συστημική Ψυχοθεραπεύτρια Μεταμόρφωση | Σαββίνα Εμιρζά</title>
+    <meta name="description" content="Η Σαββίνα Εμιρζά, αδειούχος Ψυχολόγος και Συστημική Ψυχοθεραπεύτρια στη Μεταμόρφωση, προσφέρει έναν ασφαλή χώρο για ατομική θεραπεία, οικογενειακή θεραπεία και υποστήριξη εξωσωματικής. Κλείστε ραντεβού.">
+    <meta name="keywords" content="Ψυχολόγος Μεταμόρφωση, Συστημική Ψυχοθεραπεία, Οικογενειακή Ψυχοθεραπεύτρια, Υπογονιμότητα, IVF, Εξωσωματική Γονιμοποίηση, Σαββίνα Εμιρζά, Θεραπεία Παιδιού Εφήβου, Test WISC, CBD, Άγχος">
+    <meta name="author" content="Advon Media">
+    <meta name="robots" content="index, follow">
+    
+    <link rel="icon" href="https://github.com/agelmet/EMIRZA/blob/main/emlogo-2.png?raw=true" type="image/png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        space: {
+                            // Sophisticated cosmic palette (NO GREEN, NO YELLOW)
+                            void: '#0B0A14',      // Deepest midnight
+                            nebula: '#2C1E3A',    // Cosmic purple
+                            stardust: '#D4A5A5',  // Dusty rose
+                            blush: '#E4CFE8',     // Lunar pink/purple
+                            peach: '#F5D4BF',     // Warm stellar glow
+                            cloud: '#F5F5F7',     // Soft lunar white
+                            meteor: '#4A4E69',    // Muted purple/grey
+                            horizon: '#9A8C98'    // Soft cosmic mauve
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    boxShadow: {
+                        'glass': '0 8px 32px 0 rgba(44, 30, 58, 0.15)',
+                        'soft': '0 20px 40px -15px rgba(0,0,0,0.08)',
+                        'glow-purple': '0 0 40px -10px rgba(228, 207, 232, 0.6)',
+                        'glow-rose': '0 0 40px -10px rgba(212, 165, 165, 0.6)',
+                    },
+                    animation: {
+                        'blob': 'blob 10s infinite',
+                        'marquee': 'marquee 45s linear infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                        'fade-in-up': 'fadeInUp 1s cubic-bezier(0.5, 0, 0, 1) forwards',
+                    },
+                    keyframes: {
+                        blob: {
+                            '0%': { transform: 'translate(0px, 0px) scale(1)' },
+                            '33%': { transform: 'translate(30px, -50px) scale(1.1)' },
+                            '66%': { transform: 'translate(-20px, 20px) scale(0.9)' },
+                            '100%': { transform: 'translate(0px, 0px) scale(1)' },
+                        },
+                        marquee: {
+                            '0%': { transform: 'translateX(0%)' },
+                            '100%': { transform: 'translateX(-50%)' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-15px)' },
+                        },
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(40px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Smooth Custom Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0B0A14; }
+        ::-webkit-scrollbar-thumb { background: #4A4E69; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #D4A5A5; }
+
+        /* Typography fixes for Greek Uppercase (No Accents) */
+        .no-accents { text-transform: uppercase; letter-spacing: 0.1em; }
+
+        /* Reveal Animations */
+        .reveal { opacity: 0; transform: translateY(40px); transition: all 1s cubic-bezier(0.5, 0, 0, 1); }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+        .reveal-delay-1 { transition-delay: 0.15s; }
+        .reveal-delay-2 { transition-delay: 0.3s; }
+        .reveal-delay-3 { transition-delay: 0.45s; }
+
+        /* Glassmorphism Classes */
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.6);
+        }
+        .glass-panel-dark {
+            background: rgba(44, 30, 58, 0.4);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* Hero Image Arch */
+        .hero-arch-img {
+            border-radius: 150px 150px 20px 20px;
+        }
+
+        /* Image Hover Effects */
+        .img-zoom { overflow: hidden; }
+        .img-zoom img { transition: transform 0.8s ease; }
+        .img-zoom:hover img { transform: scale(1.05); }
+
+        /* Marquee specific */
+        .marquee-container {
+            display: flex;
+            width: max-content;
+        }
+        .marquee-container:hover {
+            animation-play-state: paused;
+        }
+
+        /* Lightbox styling */
+        #lightbox {
+            opacity: 0; pointer-events: none; transition: opacity 0.4s ease;
+            backdrop-filter: blur(15px); -webkit-backdrop-filter: blur(15px);
+        }
+        #lightbox.active { opacity: 1; pointer-events: auto; z-index: 9999; }
+        #lightbox img { transform: scale(0.95); transition: transform 0.4s ease; }
+        #lightbox.active img { transform: scale(1); }
+        
+        /* Service Cards Premium Hover */
+        .service-card {
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.1), var(--tw-shadow-glow);
+        }
+
+        /* Background Gradient Overlay Text */
+        .text-gradient {
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+    </style>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-space-cloud text-space-void font-sans antialiased overflow-x-hidden selection:bg-space-stardust selection:text-white">
+
+    <div class="fixed inset-0 z-[-1] overflow-hidden pointer-events-none opacity-40">
+        <div class="absolute top-[10%] right-[-5%] w-[40vw] h-[40vw] rounded-full bg-space-blush/30 mix-blend-multiply filter blur-[100px] animate-blob" style="animation-delay: 1s;"></div>
+        <div class="absolute bottom-[-10%] left-[10%] w-[50vw] h-[50vw] rounded-full bg-space-peach/20 mix-blend-multiply filter blur-[120px] animate-blob" style="animation-delay: 3s;"></div>
+    </div>
+
+    <nav class="fixed w-full z-50 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-6 py-4">
+            <div class="glass-panel rounded-full flex justify-between items-center px-6 py-3 shadow-glass border-white/40">
+                <a href="#" class="flex items-center gap-3 group relative">
+                    <div class="w-12 h-12 rounded-full overflow-hidden shadow-md group-hover:shadow-lg transition-all duration-500 border-2 border-white group-hover:border-space-blush">
+                        <img src="https://github.com/agelmet/EMIRZA/blob/main/emlogo-2.png?raw=true" alt="Σαββίνα Εμιρζά Logo" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="hidden sm:block">
+                        <h2 class="font-serif font-bold text-space-void leading-none tracking-wide">ΣΑΒΒΙΝΑ ΕΜΙΡΖΑ</h2>
+                        <p class="text-[10px] uppercase tracking-widest text-space-meteor mt-1 no-accents">Ψυχολογος - Ψυχοθεραπευτρια</p>
+                    </div>
+                </a>
+                
+                <div class="hidden lg:flex items-center space-x-8">
+                    <a href="#philosophy" class="text-sm font-medium text-space-meteor hover:text-space-nebula transition-colors no-accents">Η ΦΙΛΟΣΟΦΙΑ</a>
+                    <a href="#services" class="text-sm font-medium text-space-meteor hover:text-space-nebula transition-colors no-accents">ΥΠΗΡΕΣΙΕΣ</a>
+                    <a href="#identity" class="text-sm font-medium text-space-meteor hover:text-space-nebula transition-colors no-accents">ΤΑΥΤΟΤΗΤΑ</a>
+                    <a href="#space" class="text-sm font-medium text-space-meteor hover:text-space-nebula transition-colors no-accents">Ο ΧΩΡΟΣ</a>
+                    <a href="#reviews" class="text-sm font-medium text-space-meteor hover:text-space-nebula transition-colors no-accents">ΕΜΠΕΙΡΙΕΣ</a>
+                    <a href="#contact" class="px-7 py-2.5 bg-space-nebula text-white rounded-full text-sm font-medium hover:bg-space-void shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-0.5 no-accents tracking-wider">
+                        ΚΛΕΙΣΤΕ ΡΑΝΤΕΒΟΥ
+                    </a>
+                </div>
+
+                <button class="lg:hidden text-space-void focus:outline-none" id="mobile-menu-btn">
+                    <i data-lucide="menu" class="w-7 h-7"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div id="mobile-menu" class="absolute top-full left-0 w-full bg-white/95 backdrop-blur-xl shadow-2xl hidden flex-col items-center py-10 space-y-8 border-t border-space-blush/20">
+            <a href="#philosophy" class="text-lg font-medium text-space-void mobile-link no-accents">Η ΦΙΛΟΣΟΦΙΑ</a>
+            <a href="#services" class="text-lg font-medium text-space-void mobile-link no-accents">ΥΠΗΡΕΣΙΕΣ</a>
+            <a href="#identity" class="text-lg font-medium text-space-void mobile-link no-accents">ΤΑΥΤΟΤΗΤΑ</a>
+            <a href="#space" class="text-lg font-medium text-space-void mobile-link no-accents">Ο ΧΩΡΟΣ</a>
+            <a href="#reviews" class="text-lg font-medium text-space-void mobile-link no-accents">ΕΜΠΕΙΡΙΕΣ</a>
+            <a href="#contact" class="px-8 py-3 bg-space-nebula text-white rounded-full text-lg font-medium mobile-link shadow-lg no-accents">ΚΛΕΙΣΤΕ ΡΑΝΤΕΒΟΥ</a>
+        </div>
+    </nav>
+
+    <section class="relative min-h-screen flex items-center pt-32 pb-20 px-6 overflow-hidden bg-space-void">
+        <div class="absolute inset-0 z-0">
+            <div class="w-full h-full bg-cover bg-center opacity-40 transform scale-105" style="background-image: url('https://github.com/agelmet/EMIRZA/blob/main/IMG_3644.jpeg?raw=true');"></div>
+            <div class="absolute inset-0 bg-gradient-to-r from-space-void/95 via-space-nebula/80 to-transparent z-10"></div>
+            <div class="absolute inset-0 bg-space-nebula/20 mix-blend-overlay z-10"></div>
+        </div>
+
+        <svg class="absolute top-10 left-0 w-1/2 h-auto opacity-30 pointer-events-none z-10" viewBox="0 0 500 200" fill="none">
+            <path d="M-50 150 C 150 250, 300 -50, 550 150" stroke="url(#paint0_linear)" stroke-width="2" fill="none"/>
+            <path d="M-50 170 C 170 270, 320 -30, 550 170" stroke="url(#paint0_linear)" stroke-width="1" fill="none" opacity="0.6"/>
+            <defs>
+                <linearGradient id="paint0_linear" x1="0" y1="100" x2="500" y2="100" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#E4CFE8" stop-opacity="0.8"/>
+                    <stop offset="1" stop-color="#D4A5A5" stop-opacity="0"/>
+                </linearGradient>
+            </defs>
+        </svg>
+        <svg class="absolute bottom-10 right-0 w-2/3 h-auto opacity-30 pointer-events-none z-10" viewBox="0 0 600 200" fill="none">
+            <path d="M50 100 C 250 -50, 450 250, 650 50" stroke="url(#paint1_linear)" stroke-width="2" fill="none"/>
+            <defs>
+                <linearGradient id="paint1_linear" x1="600" y1="100" x2="0" y2="100" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#F5D4BF" stop-opacity="0.6"/>
+                    <stop offset="1" stop-color="#2C1E3A" stop-opacity="0"/>
+                </linearGradient>
+            </defs>
+        </svg>
+
+        <div class="max-w-7xl mx-auto w-full flex flex-col-reverse lg:flex-row gap-16 items-center relative z-20">
+            
+            <div class="lg:w-1/2 w-full animate-fade-in-up">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-panel-dark text-space-blush text-xs font-bold mb-8 border-space-blush/20 tracking-widest no-accents">
+                    <span class="w-2 h-2 rounded-full bg-space-peach animate-pulse"></span>
+                    ΨΥΧΟΛΟΓΟΣ • ΟΙΚΟΓΕΝΕΙΑΚΗ ΨΥΧΟΘΕΡΑΠΕΥΤΡΙΑ
+                </div>
+                
+                <h1 class="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-serif text-white leading-[1.1] mb-6 drop-shadow-xl tracking-[0.02em]">
+                    Συστημική <br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-space-peach via-space-blush to-space-stardust italic font-medium">Θεραπεία.</span>
+                </h1>
+                
+                <p class="text-2xl font-serif italic text-space-horizon mb-8">
+                    "Η Δύναμη Πηγάζει μέσα από το Μοίρασμα"
+                </p>
+
+                <div class="flex items-center gap-4 text-sm text-gray-300 font-medium tracking-wide mb-10 no-accents">
+                    <span>MSc ΕΚΠΑ</span>
+                    <div class="w-px h-4 bg-white/30"></div>
+                    <span>ΜΕΤΑΜΟΡΦΩΣΗ ΑΤΤΙΚΗΣ</span>
+                </div>
+                
+                <div class="flex flex-wrap items-center gap-5">
+                    <a href="#contact" class="px-8 py-4 bg-gradient-to-r from-space-stardust to-space-nebula text-white rounded-full font-bold hover:shadow-[0_0_30px_rgba(212,165,165,0.4)] transition-all flex items-center gap-3 group no-accents text-sm tracking-wider">
+                        ΚΛΕΙΣΤΕ ΣΥΝΕΔΡΙΑ
+                        <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="lg:w-1/2 w-full flex justify-center lg:justify-end relative">
+                <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[80%] h-[90%] bg-gradient-to-tr from-space-nebula to-space-blush rounded-full blur-[80px] opacity-60 z-0"></div>
+                
+                <div class="relative z-10 w-[85%] max-w-[450px] animate-float">
+                    <div class="overflow-hidden shadow-[0_30px_60px_-15px_rgba(0,0,0,0.8)] border-4 border-white/20 hero-arch-img glass-panel-dark p-2 transition-transform duration-1000 hover:scale-[1.03]">
+                        <img src="https://github.com/agelmet/EMIRZA/blob/main/IMG_3639.jpeg?raw=true" alt="Σαββίνα Εμιρζά Ψυχολόγος" class="w-full h-auto object-cover hero-arch-img opacity-95">
+                    </div>
+
+                    <div class="absolute -bottom-6 -left-6 lg:-left-12 z-30 glass-panel p-4 rounded-2xl shadow-2xl flex items-center gap-4 border border-white/40 animate-[blob_6s_infinite_alternate]">
+                        <div class="w-12 h-12 rounded-full bg-gradient-to-br from-space-stardust to-space-nebula flex items-center justify-center text-white shadow-lg">
+                            <i data-lucide="heart" class="w-5 h-5 fill-current"></i>
+                        </div>
+                        <div>
+                            <p class="text-sm font-bold text-space-void leading-tight">Απόλυτη<br>Ασφάλεια</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center gap-2 opacity-60 hover:opacity-100 transition-opacity z-20">
+            <span class="text-[10px] text-white tracking-[0.2em] font-medium no-accents">SCROLL DOWN</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-white animate-bounce"></i>
+        </div>
+        
+        <div class="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-space-cloud to-transparent z-10"></div>
+    </section>
+
+    <section id="philosophy" class="py-24 px-6 relative bg-space-cloud">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-12 gap-16 items-center">
+            
+            <div class="lg:col-span-7 reveal">
+                <span class="text-space-stardust font-bold tracking-[0.15em] text-xs uppercase no-accents block mb-4">ΓΝΩΡΙΣΤΕ ΤΗ ΣΑΒΒΙΝΑ</span>
+                <h2 class="text-4xl md:text-5xl font-serif text-space-void mb-8 leading-tight">Ενδυνάμωση μέσα από την <span class="italic text-space-nebula">Κατανόηση</span></h2>
+                
+                <div class="space-y-6 text-lg text-space-meteor font-light leading-relaxed">
+                    <p>
+                        Η <strong>Σαββίνα Εμιρζά (MSc)</strong> είναι αδειούχος Ψυχολόγος και Οικογενειακή Ψυχοθεραπεύτρια, με έδρα τη Μεταμόρφωση. Το ακαδημαϊκό της υπόβαθρο χαρακτηρίζεται από αριστεία: αποφοίτησε από το Τμήμα Ψυχολογίας του <strong>Εθνικού και Καποδιστριακού Πανεπιστημίου Αθηνών (ΕΚΠΑ)</strong> και ολοκλήρωσε με άριστα τις μεταπτυχιακές της σπουδές στην «Προαγωγή και Αγωγή Υγείας» της Ιατρικής Σχολής του ΕΚΠΑ.
+                    </p>
+                    <p>
+                        Η κλινική της ματιά διαμορφώθηκε μέσα από την εξειδίκευσή της στη <strong>Συστημική - Οικογενειακή Ψυχοθεραπεία</strong> στο Τμήμα Ψυχιατρικής Παιδιών και Εφήβων του Γενικού Νοσοκομείου «Γ. Γεννηματάς». Αυτό της επέτρεψε να κατανοήσει βαθιά τη δυναμική της οικογένειας και τον τρόπο που τα μέλη της αλληλεπιδρούν.
+                    </p>
+                    <blockquote class="border-l-4 border-space-blush pl-6 py-4 my-8 text-2xl font-serif text-space-void italic bg-white/50 rounded-r-2xl shadow-sm">
+                        "Η δύναμη έρχεται μέσα από το μοίρασμα. Κάθε δυσκολία μοιράζεται και μετασχηματίζεται σε κινητήριο δύναμη."
+                    </blockquote>
+                    <p>
+                        Έχοντας πολύτιμη εμπειρία από το 2013 σε Ψυχοπαιδαγωγικά Κέντρα και δομές ειδικής αγωγής (Εργαστήρι «ΜΑΡΓΑΡΙΤΑ», ΟΚΑΝΑ «ΠΡΟΝΟΗ»), εστιάζει στην ενδυνάμωση παιδιών, εφήβων και γονέων. Είτε υποστηρίζει έναν έφηβο με άγχος, είτε ένα ζευγάρι που διανύει τη δύσκολη διαδρομή της υπογονιμότητας, δημιουργεί ένα περιβάλλον <strong>απόλυτης ασφάλειας</strong>.
+                    </p>
+                </div>
+            </div>
+
+            <div class="lg:col-span-5 relative reveal reveal-delay-2">
+                <div class="aspect-[4/5] rounded-[2.5rem] overflow-hidden shadow-soft img-zoom relative z-10 border-8 border-white">
+                    <img src="https://github.com/agelmet/EMIRZA/blob/main/IMG_4616.jpeg?raw=true" alt="Σαββίνα Εμιρζά Γραφείο" class="w-full h-full object-cover">
+                </div>
+                <div class="absolute -bottom-10 -right-10 w-48 h-48 bg-space-peach/30 rounded-full z-0 blur-xl"></div>
+                <div class="absolute -top-10 -left-10 w-32 h-32 bg-space-blush/40 rounded-full z-0 blur-xl"></div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="services" class="py-24 px-6 relative bg-white">
+        <div class="absolute inset-0 opacity-[0.02] pointer-events-none" style="background-image: radial-gradient(#2C1E3A 1px, transparent 1px); background-size: 30px 30px;"></div>
+
+        <div class="max-w-7xl mx-auto relative z-10">
+            <div class="text-center mb-20 reveal">
+                <span class="text-space-stardust font-bold tracking-[0.15em] text-xs uppercase no-accents">ΕΞΕΙΔΙΚΕΥΣΗ & ΠΡΟΣΕΓΓΙΣΗ</span>
+                <h2 class="text-4xl md:text-5xl font-serif text-space-void mt-4 mb-6">Οι Υπηρεσίες Μας</h2>
+                <div class="w-16 h-1 bg-space-blush mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-6">
+                
+                <div class="service-card lg:col-span-3 glass-panel bg-white p-10 rounded-[2.5rem] group relative overflow-hidden reveal shadow-soft border border-gray-100" style="--tw-shadow-glow: 0 0 40px -10px rgba(44, 30, 58, 0.15);">
+                    <div class="absolute -right-20 -top-20 w-64 h-64 bg-space-blush/20 rounded-full blur-[60px] group-hover:bg-space-blush/40 transition-colors duration-700"></div>
+                    <div class="relative z-10">
+                        <div class="w-16 h-16 bg-space-cloud shadow-sm rounded-2xl flex items-center justify-center mb-8 group-hover:-translate-y-2 transition-transform duration-500">
+                            <i data-lucide="baby" class="w-8 h-8 text-space-nebula"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-space-void mb-4">Ψυχολογία Παιδιού & Εφήβου: Αξιολόγηση και Παρέμβαση</h3>
+                        <p class="text-space-meteor mb-8 text-base leading-relaxed">
+                            Η παρέμβαση απαιτεί εξειδικευμένα εργαλεία. Παρέχεται έγκυρη ψυχομετρική αξιολόγηση (WISC, Rorschach) και υποστήριξη σε παιδιά με νευροαναπτυξιακές προκλήσεις (ΔΕΠΥ, Αυτισμός, Μαθησιακές Δυσκολίες). Οργανώνονται ειδικές ομάδες εφήβων διαχείρισης άγχους εξετάσεων.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1.5 bg-gray-50 text-space-nebula text-xs font-bold rounded-xl border border-gray-100">Test Νοημοσύνης WISC</span>
+                            <span class="px-3 py-1.5 bg-gray-50 text-space-nebula text-xs font-bold rounded-xl border border-gray-100">ΔΕΠΥ / Αυτισμός</span>
+                            <span class="px-3 py-1.5 bg-gray-50 text-space-nebula text-xs font-bold rounded-xl border border-gray-100">Άγχος Εξετάσεων</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-card lg:col-span-3 glass-panel bg-white p-10 rounded-[2.5rem] group relative overflow-hidden reveal reveal-delay-1 shadow-soft border border-gray-100" style="--tw-shadow-glow: 0 0 40px -10px rgba(212, 165, 165, 0.2);">
+                    <div class="absolute -right-20 -top-20 w-64 h-64 bg-space-peach/20 rounded-full blur-[60px] group-hover:bg-space-peach/40 transition-colors duration-700"></div>
+                    <div class="relative z-10">
+                        <div class="w-16 h-16 bg-space-cloud shadow-sm rounded-2xl flex items-center justify-center mb-8 group-hover:-translate-y-2 transition-transform duration-500">
+                            <i data-lucide="flower-2" class="w-8 h-8 text-space-stardust"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-space-void mb-4">Υποστήριξη Υπογονιμότητας & Εξωσωματικής (IVF)</h3>
+                        <p class="text-space-meteor mb-8 text-base leading-relaxed">
+                            Η διαδρομή της υπογονιμότητας είναι συναισθηματικά εξαντλητική. Προσφέρεται ένας εξειδικευμένος, προστατευμένος χώρος για άτομα ή ζευγάρια, για τη διαχείριση του άγχους, της απώλειας και των ορμονικών μεταπτώσεων, διατηρώντας την ελπίδα και την ανθεκτικότητα.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1.5 bg-gray-50 text-space-stardust text-xs font-bold rounded-xl border border-gray-100">Υποστήριξη IVF</span>
+                            <span class="px-3 py-1.5 bg-gray-50 text-space-stardust text-xs font-bold rounded-xl border border-gray-100">Ζευγάρια</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-card lg:col-span-2 glass-panel bg-white p-8 rounded-[2.5rem] group relative overflow-hidden reveal shadow-soft border border-gray-100">
+                    <div class="relative z-10 flex flex-col h-full">
+                        <div class="w-14 h-14 bg-space-cloud rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500">
+                            <i data-lucide="users" class="w-6 h-6 text-space-void"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-space-void mb-3">Συστημική Οικογενειακή Θεραπεία & Σχέσεις</h3>
+                        <p class="text-space-meteor text-sm mb-6 flex-grow leading-relaxed">
+                            Συνεδρίες (90') εστιάζοντας στη βελτίωση της επικοινωνίας. Συμβουλευτική διαζυγίου προστατεύοντας τα παιδιά, και Ομάδες Γονέων για ενδυνάμωση του ρόλου τους.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="service-card lg:col-span-2 glass-panel bg-white p-8 rounded-[2.5rem] group relative overflow-hidden reveal reveal-delay-1 shadow-soft border border-gray-100">
+                    <div class="relative z-10 flex flex-col h-full">
+                        <div class="w-14 h-14 bg-space-cloud rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500">
+                            <i data-lucide="drama" class="w-6 h-6 text-space-nebula"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-space-void mb-3">Ατομική Θεραπεία & Ομάδες CBD (Δράμα)</h3>
+                        <p class="text-space-meteor text-sm mb-6 flex-grow leading-relaxed">
+                            Διαχείριση άγχους, φοβιών, κατάθλιψης (60'). Καινοτόμες Ομάδες Γνωσιακού Συμπεριφορικού Δράματος (CBD) για ανάπτυξη κοινωνικών δεξιοτήτων μέσω βιωματικού ρόλου.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="service-card lg:col-span-2 glass-panel bg-white p-8 rounded-[2.5rem] group relative overflow-hidden reveal reveal-delay-2 shadow-soft border border-gray-100">
+                    <div class="relative z-10 flex flex-col h-full">
+                        <div class="w-14 h-14 bg-space-cloud rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500">
+                            <i data-lucide="video" class="w-6 h-6 text-space-horizon"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-space-void mb-3">Διαδικτυακή Θεραπεία & Εποπτεία</h3>
+                        <p class="text-space-meteor text-sm mb-6 flex-grow leading-relaxed">
+                            Συνεδρίες μέσω βιντεοκλήσης, χορήγηση βεβαιώσεων ψυχικής υγείας και Ατομική Εποπτεία για νέους επαγγελματίες μεταδίδοντας πλούσια κλινική εμπειρία.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="identity" class="py-24 px-6 bg-space-void text-white relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-[50vw] h-[50vw] bg-space-nebula/30 rounded-full blur-[120px] pointer-events-none"></div>
+        <div class="absolute bottom-0 left-0 w-[40vw] h-[40vw] bg-space-stardust/10 rounded-full blur-[100px] pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto relative z-10">
+            <div class="mb-20 reveal lg:w-2/3">
+                <span class="text-space-peach font-bold tracking-[0.15em] text-xs uppercase no-accents">Η ΤΑΥΤΟΤΗΤΑ ΤΗΣ ΠΡΑΚΤΙΚΗΣ ΜΟΥ</span>
+                <h2 class="text-4xl md:text-5xl font-serif text-white mt-4 mb-6">Το Θεραπευτικό μου Μωσαϊκό: Από την Επιστήμη στην Πράξη</h2>
+                <div class="w-16 h-1 bg-space-peach rounded-full"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-x-12 gap-y-16">
+                <div class="flex gap-6 group reveal">
+                    <div class="shrink-0">
+                        <div class="w-14 h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center group-hover:bg-space-nebula transition-colors duration-300 shadow-lg">
+                            <span class="text-2xl">🏥</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-bold text-white mb-3">Κλινική Εκπαίδευση Πρώτης Γραμμής</h4>
+                        <p class="text-space-horizon leading-relaxed">
+                            Η ειδίκευσή μου στο Τμήμα Ψυχιατρικής Παιδιών και Εφήβων του Γ.Ν.Α. «Γ. Γεννηματάς» εξασφάλισε την άμεση επαφή μου με απαιτητικά, πραγματικά κλινικά περιστατικά, θωρακίζοντας την επιστημονική μου κρίση.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex gap-6 group reveal reveal-delay-1">
+                    <div class="shrink-0">
+                        <div class="w-14 h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center group-hover:bg-space-blush transition-colors duration-300 shadow-lg">
+                            <span class="text-2xl">📏</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-bold text-white mb-3">Εξειδικευμένη Ψυχομετρική Αξιολόγηση</h4>
+                        <p class="text-space-horizon leading-relaxed">
+                            Δεν στηρίζομαι μόνο στην παρατήρηση. Η πιστοποίησή μου στα πλέον έγκυρα παγκοσμίως ψυχομετρικά και προβολικά τεστ (WISC-III, Rorschach) διασφαλίζει εμπεριστατωμένη, αντικειμενική αξιολόγηση για παιδιά και ενήλικες.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex gap-6 group reveal">
+                    <div class="shrink-0">
+                        <div class="w-14 h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center group-hover:bg-space-stardust transition-colors duration-300 shadow-lg">
+                            <span class="text-2xl">🌱</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-bold text-white mb-3">Πρωτοπορία στην Υποστήριξη IVF</h4>
+                        <p class="text-space-horizon leading-relaxed">
+                            Η υπογονιμότητα είναι ένα "σιωπηλό" πένθος που πολλοί θεραπευτές παραβλέπουν. Η στοχευμένη υποστήριξη που παρέχω σε ζευγάρια κατά τη διαδικασία της Εξωσωματικής (IVF) αποτελεί μια εξαιρετικά ευαίσθητη και απαραίτητη εξειδίκευση.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex gap-6 group reveal reveal-delay-1">
+                    <div class="shrink-0">
+                        <div class="w-14 h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center group-hover:bg-space-peach transition-colors duration-300 shadow-lg">
+                            <span class="text-2xl">🎭</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-bold text-white mb-3">Καινοτομία μέσω του CBD</h4>
+                        <p class="text-space-horizon leading-relaxed">
+                            Είμαι εκπαιδευμένη στο Γνωσιακό Συμπεριφορικό Δράμα (CBD), ένα πρωτοποριακό εργαλείο που μετατρέπει την ψυχοθεραπευτική διαδικασία σε κάτι ζωντανό και βιωματικό, ιδανικό για όσους δυσκολεύονται με τη συμβατική "θεραπεία μέσω συζήτησης".
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="space" class="py-24 px-6 bg-space-cloud">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16 reveal">
+                <span class="text-space-stardust font-bold tracking-[0.15em] text-xs uppercase no-accents">ΕΝΑ ΑΣΦΑΛΕΣ ΠΕΡΙΒΑΛΛΟΝ</span>
+                <h2 class="text-4xl md:text-5xl font-serif text-space-void mt-4 mb-6">Ο Χώρος Μας</h2>
+                <p class="text-space-meteor max-w-2xl mx-auto text-lg">
+                    Ένα περιβάλλον σχεδιασμένο για να αποπνέει ηρεμία, ζεστασιά και απόλυτη ιδιωτικότητα. Μια όαση γαλήνης στη Μεταμόρφωση.
+                </p>
+            </div>
+
+            <div class="columns-1 sm:columns-2 lg:columns-3 gap-6 space-y-6">
+                <button class="w-full break-inside-avoid rounded-2xl overflow-hidden group relative reveal shadow-md hover:shadow-xl transition-shadow" onclick="openLightbox('https://github.com/agelmet/EMIRZA/blob/main/1759234505228925.jpeg?raw=true')">
+                    <img src="https://github.com/agelmet/EMIRZA/blob/main/1759234505228925.jpeg?raw=true" alt="Χώρος 1" class="w-full h-auto transform group-hover:scale-[1.03] transition-transform duration-700">
+                    <div class="absolute inset-0 bg-space-void/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <i data-lucide="expand" class="w-8 h-8 text-white drop-shadow-md"></i>
+                    </div>
+                </button>
+                <button class="w-full break-inside-avoid rounded-2xl overflow-hidden group relative reveal reveal-delay-1 shadow-md hover:shadow-xl transition-shadow" onclick="openLightbox('https://github.com/agelmet/EMIRZA/blob/main/C7412E32-9551-4451-A648-1300DAE07467.jpeg?raw=true')">
+                    <img src="https://github.com/agelmet/EMIRZA/blob/main/C7412E32-9551-4451-A648-1300DAE07467.jpeg?raw=true" alt="Χώρος 2" class="w-full h-auto transform group-hover:scale-[1.03] transition-transform duration-700">
+                    <div class="absolute inset-0 bg-space-void/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <i data-lucide="expand" class="w-8 h-8 text-white drop-shadow-md"></i>
+                    </div>
+                </button>
+                <button class="w-full break-inside-avoid rounded-2xl overflow-hidden group relative reveal reveal-delay-2 shadow-md hover:shadow-xl transition-shadow" onclick="openLightbox('https://github.com/agelmet/EMIRZA/blob/main/IMG_3648.jpeg?raw=true')">
+                    <img src="https://github.com/agelmet/EMIRZA/blob/main/IMG_3648.jpeg?raw=true" alt="Χώρος 3" class="w-full h-auto transform group-hover:scale-[1.03] transition-transform duration-700">
+                    <div class="absolute inset-0 bg-space-void/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <i data-lucide="expand" class="w-8 h-8 text-white drop-shadow-md"></i>
+                    </div>
+                </button>
+                <button class="w-full break-inside-avoid rounded-2xl overflow-hidden group relative reveal shadow-md hover:shadow-xl transition-shadow" onclick="openLightbox('https://github.com/agelmet/EMIRZA/blob/main/IMG_3985.jpeg?raw=true')">
+                    <img src="https://github.com/agelmet/EMIRZA/blob/main/IMG_3985.jpeg?raw=true" alt="Χώρος 4" class="w-full h-auto transform group-hover:scale-[1.03] transition-transform duration-700">
+                    <div class="absolute inset-0 bg-space-void/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <i data-lucide="expand" class="w-8 h-8 text-white drop-shadow-md"></i>
+                    </div>
+                </button>
+                <button class="w-full break-inside-avoid rounded-2xl overflow-hidden group relative reveal reveal-delay-1 shadow-md hover:shadow-xl transition-shadow" onclick="openLightbox('https://github.com/agelmet/EMIRZA/blob/main/IMG_4381.jpeg?raw=true')">
+                    <img src="https://github.com/agelmet/EMIRZA/blob/main/IMG_4381.jpeg?raw=true" alt="Χώρος 5" class="w-full h-auto transform group-hover:scale-[1.03] transition-transform duration-700">
+                    <div class="absolute inset-0 bg-space-void/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <i data-lucide="expand" class="w-8 h-8 text-white drop-shadow-md"></i>
+                    </div>
+                </button>
+                <button class="w-full break-inside-avoid rounded-2xl overflow-hidden group relative reveal reveal-delay-2 shadow-md hover:shadow-xl transition-shadow" onclick="openLightbox('https://github.com/agelmet/EMIRZA/blob/main/IMG_4382.jpeg?raw=true')">
+                    <img src="https://github.com/agelmet/EMIRZA/blob/main/IMG_4382.jpeg?raw=true" alt="Χώρος 6" class="w-full h-auto transform group-hover:scale-[1.03] transition-transform duration-700">
+                    <div class="absolute inset-0 bg-space-void/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <i data-lucide="expand" class="w-8 h-8 text-white drop-shadow-md"></i>
+                    </div>
+                </button>
+                <button class="w-full break-inside-avoid rounded-2xl overflow-hidden group relative reveal shadow-md hover:shadow-xl transition-shadow" onclick="openLightbox('https://github.com/agelmet/EMIRZA/blob/main/IMG_4385.jpeg?raw=true')">
+                    <img src="https://github.com/agelmet/EMIRZA/blob/main/IMG_4385.jpeg?raw=true" alt="Χώρος 7" class="w-full h-auto transform group-hover:scale-[1.03] transition-transform duration-700">
+                    <div class="absolute inset-0 bg-space-void/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <i data-lucide="expand" class="w-8 h-8 text-white drop-shadow-md"></i>
+                    </div>
+                </button>
+                <button class="w-full break-inside-avoid rounded-2xl overflow-hidden group relative reveal reveal-delay-1 shadow-md hover:shadow-xl transition-shadow" onclick="openLightbox('https://github.com/agelmet/EMIRZA/blob/main/IMG_4386.jpeg?raw=true')">
+                    <img src="https://github.com/agelmet/EMIRZA/blob/main/IMG_4386.jpeg?raw=true" alt="Χώρος 8" class="w-full h-auto transform group-hover:scale-[1.03] transition-transform duration-700">
+                    <div class="absolute inset-0 bg-space-void/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <i data-lucide="expand" class="w-8 h-8 text-white drop-shadow-md"></i>
+                    </div>
+                </button>
+                <button class="w-full break-inside-avoid rounded-2xl overflow-hidden group relative reveal reveal-delay-2 shadow-md hover:shadow-xl transition-shadow" onclick="openLightbox('https://github.com/agelmet/EMIRZA/blob/main/IMG_5173.jpeg?raw=true')">
+                    <img src="https://github.com/agelmet/EMIRZA/blob/main/IMG_5173.jpeg?raw=true" alt="Χώρος 9" class="w-full h-auto transform group-hover:scale-[1.03] transition-transform duration-700">
+                    <div class="absolute inset-0 bg-space-void/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <i data-lucide="expand" class="w-8 h-8 text-white drop-shadow-md"></i>
+                    </div>
+                </button>
+                <button class="w-full break-inside-avoid rounded-2xl overflow-hidden group relative reveal shadow-md hover:shadow-xl transition-shadow" onclick="openLightbox('https://github.com/agelmet/EMIRZA/blob/main/IMG_6394.jpeg?raw=true')">
+                    <img src="https://github.com/agelmet/EMIRZA/blob/main/IMG_6394.jpeg?raw=true" alt="Χώρος 10" class="w-full h-auto transform group-hover:scale-[1.03] transition-transform duration-700">
+                    <div class="absolute inset-0 bg-space-void/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <i data-lucide="expand" class="w-8 h-8 text-white drop-shadow-md"></i>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <div id="lightbox" class="fixed inset-0 bg-space-void/95 flex items-center justify-center cursor-zoom-out z-[9999]" onclick="closeLightbox()">
+        <button class="absolute top-6 right-6 text-white hover:text-space-stardust transition-colors">
+            <i data-lucide="x" class="w-10 h-10"></i>
+        </button>
+        <img id="lightbox-img" src="" alt="Μεγέθυνση Χώρου" class="max-w-[95vw] max-h-[95vh] object-contain rounded-lg shadow-2xl cursor-default" onclick="event.stopPropagation()">
+    </div>
+
+    <section id="reviews" class="py-24 bg-white overflow-hidden border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 mb-16 text-center reveal">
+            <img src="https://www.doctoranytime.gr/images/logo-rebranding.svg" alt="Doctoranytime Logo" class="h-8 mx-auto mb-6">
+            <h2 class="text-4xl md:text-5xl font-serif text-space-void mb-4">Εμπειρίες Θεραπευόμενων</h2>
+            <p class="text-space-meteor text-lg">Η εμπιστοσύνη σας είναι η μεγαλύτερη απόδειξη της δουλειάς μας.</p>
+        </div>
+
+        <div class="w-full overflow-hidden relative pb-10">
+            <div class="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-white to-transparent z-10"></div>
+            <div class="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-white to-transparent z-10"></div>
+            
+            <div class="marquee-container animate-marquee">
+                <div class="flex space-x-6 px-3">
+                    <div class="w-80 bg-gray-50 p-8 rounded-3xl shadow-sm shrink-0 border border-gray-100 relative">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <div class="flex items-center gap-1 text-yellow-400 mb-1">
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                </div>
+                                <span class="font-bold text-space-void">10.0 / 10</span>
+                            </div>
+                            <img src="https://www.doctoranytime.gr/images/logo-rebranding.svg" class="h-4 opacity-50" alt="DA">
+                        </div>
+                        <p class="text-space-meteor text-sm mb-6 italic leading-relaxed">"Η Σαβίννα είναι εξαιρετική ψυχολόγος, με κατάρτιση. Κατάλαβε πολύ γρήγορα το πρόβλημα και αυτο μας έδωσε χρονο στην συνεδρία να συζητήσουμε εκτενώς το πρόβλημα και λύσεις. Σίγουρα θα συνεχίσω."</p>
+                        <div class="border-t border-gray-200 pt-4">
+                            <p class="text-xs font-bold text-space-void uppercase no-accents">MARIA</p>
+                            <p class="text-[11px] text-gray-400">08 Νοεμβρίου 2025 • 2 αξιολογήσεις</p>
+                        </div>
+                    </div>
+                    <div class="w-80 bg-gray-50 p-8 rounded-3xl shadow-sm shrink-0 border border-gray-100 relative">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <div class="flex items-center gap-1 text-yellow-400 mb-1">
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                </div>
+                                <span class="font-bold text-space-void">10.0 / 10</span>
+                            </div>
+                            <img src="https://www.doctoranytime.gr/images/logo-rebranding.svg" class="h-4 opacity-50" alt="DA">
+                        </div>
+                        <p class="text-space-meteor text-sm mb-6 italic leading-relaxed">"Δουλεύουμε μαζί εδώ και 3 χρόνια σχεδόν. Νομίζω δεν θα μπορούσα να βρω καταλληλότερη θεραπεύτρια. Η προσέγγιση της είναι άρτια, με εξαιρετικές γνώσεις και πάνω από όλα ανθρωπιά και κατανόηση."</p>
+                        <div class="border-t border-gray-200 pt-4">
+                            <p class="text-xs font-bold text-space-void uppercase no-accents">ΒΑΣΙΛΙΝΑ</p>
+                            <p class="text-[11px] text-gray-400">16 Οκτωβρίου 2025 • 1 αξιολόγηση</p>
+                        </div>
+                    </div>
+                    <div class="w-80 bg-gray-50 p-8 rounded-3xl shadow-sm shrink-0 border border-gray-100 relative">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <div class="flex items-center gap-1 text-yellow-400 mb-1">
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                </div>
+                                <span class="font-bold text-space-void">10.0 / 10</span>
+                            </div>
+                            <img src="https://www.doctoranytime.gr/images/logo-rebranding.svg" class="h-4 opacity-50" alt="DA">
+                        </div>
+                        <p class="text-space-meteor text-sm mb-6 italic leading-relaxed">"Από την πρώτη στιγμή μου ενέπνευσε εμπιστοσύνη και ασφάλεια. Πολύ βοηθητική στα θέματα τα οποία την χρειάστηκα."</p>
+                        <div class="border-t border-gray-200 pt-4">
+                            <p class="text-xs font-bold text-space-void uppercase no-accents">ΜΑΡΙΑ</p>
+                            <p class="text-[11px] text-gray-400">26 Σεπτεμβρίου 2025 • 1 αξιολόγηση</p>
+                        </div>
+                    </div>
+                    <div class="w-80 bg-gray-50 p-8 rounded-3xl shadow-sm shrink-0 border border-gray-100 relative">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <div class="flex items-center gap-1 text-yellow-400 mb-1">
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                </div>
+                                <span class="font-bold text-space-void">10.0 / 10</span>
+                            </div>
+                            <img src="https://www.doctoranytime.gr/images/logo-rebranding.svg" class="h-4 opacity-50" alt="DA">
+                        </div>
+                        <p class="text-space-meteor text-sm mb-6 italic leading-relaxed">"Κάνω συνεδρίες με την κυρία Εμιρζά καιρό. Με έχει βοηθήσει πολύ να εμπιστευτώ τον εαυτό μου, να διαχειρίζομαι το άγχος μου και να βελτιώσω τις σχέσεις μου."</p>
+                        <div class="border-t border-gray-200 pt-4">
+                            <p class="text-xs font-bold text-space-void uppercase no-accents">ΕΥΑΓΓΕΛΙΑ</p>
+                            <p class="text-[11px] text-gray-400">26 Σεπτεμβρίου 2025 • 1 αξιολόγηση</p>
+                        </div>
+                    </div>
+                    <div class="w-80 bg-gray-50 p-8 rounded-3xl shadow-sm shrink-0 border border-gray-100 relative">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <div class="flex items-center gap-1 text-yellow-400 mb-1">
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                </div>
+                                <span class="font-bold text-space-void">10.0 / 10</span>
+                            </div>
+                            <img src="https://www.doctoranytime.gr/images/logo-rebranding.svg" class="h-4 opacity-50" alt="DA">
+                        </div>
+                        <p class="text-space-meteor text-sm mb-6 italic leading-relaxed">"Ένιωσα πως μαζί της μπορώ να είμαι ο εαυτός μου, η βοήθεια που βασίζεται στην εμπειρία και τις γνώσεις της , με έκαναν να αγαπήσω το ταξίδι της θεραπείας."</p>
+                        <div class="border-t border-gray-200 pt-4">
+                            <p class="text-xs font-bold text-space-void uppercase no-accents">ΚΩΝΣΤΑΝΤΙΝΑ</p>
+                            <p class="text-[11px] text-gray-400">26 Σεπτεμβρίου 2025 • 1 αξιολόγηση</p>
+                        </div>
+                    </div>
+                    <div class="w-80 bg-gray-50 p-8 rounded-3xl shadow-sm shrink-0 border border-gray-100 relative">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <div class="flex items-center gap-1 text-yellow-400 mb-1">
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                </div>
+                                <span class="font-bold text-space-void">10.0 / 10</span>
+                            </div>
+                            <img src="https://www.doctoranytime.gr/images/logo-rebranding.svg" class="h-4 opacity-50" alt="DA">
+                        </div>
+                        <p class="text-space-meteor text-sm mb-6 italic leading-relaxed">"Εξαιρετική, έμπειρη, φιλική! Την εμπιστεύομαι 100%."</p>
+                        <div class="border-t border-gray-200 pt-4">
+                            <p class="text-xs font-bold text-space-void uppercase no-accents">ΓΙΩΡΓΟΣ</p>
+                            <p class="text-[11px] text-gray-400">05 Αυγούστου 2025 • 1 αξιολόγηση</p>
+                        </div>
+                    </div>
+                    <div class="w-80 bg-gray-50 p-8 rounded-3xl shadow-sm shrink-0 border border-gray-100 relative">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <div class="flex items-center gap-1 text-yellow-400 mb-1">
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                </div>
+                                <span class="font-bold text-space-void">10.0 / 10</span>
+                            </div>
+                            <img src="https://www.doctoranytime.gr/images/logo-rebranding.svg" class="h-4 opacity-50" alt="DA">
+                        </div>
+                        <p class="text-space-meteor text-sm mb-6 italic leading-relaxed">"Εξαιρετική επαγγελματίας και πολύ ζεστος άνθρωπος! Νιώθω ασφάλεια και κατανόηση σε κάθε συνεδρία και με έχει βοηθήσει ουσιαστικά. Τη συστήνω ανεπιφύλακτα!"</p>
+                        <div class="border-t border-gray-200 pt-4">
+                            <p class="text-xs font-bold text-space-void uppercase no-accents">ΝΤΙΑΝΑ</p>
+                            <p class="text-[11px] text-gray-400">05 Αυγούστου 2025 • 1 αξιολόγηση</p>
+                        </div>
+                    </div>
+                    <div class="w-80 bg-gray-50 p-8 rounded-3xl shadow-sm shrink-0 border border-gray-100 relative">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <div class="flex items-center gap-1 text-yellow-400 mb-1">
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                </div>
+                                <span class="font-bold text-space-void">10.0 / 10</span>
+                            </div>
+                            <img src="https://www.doctoranytime.gr/images/logo-rebranding.svg" class="h-4 opacity-50" alt="DA">
+                        </div>
+                        <p class="text-space-meteor text-sm mb-6 italic leading-relaxed">"Κέρδισε την εμπιστοσύνη μου από την πρώτη στιγμή. Ξέρει να ακούει και σου δίνει χώρο να βρεις τη δύναμή σου, όταν εσύ νιώθεις ότι δεν υπάρχει!"</p>
+                        <div class="border-t border-gray-200 pt-4">
+                            <p class="text-xs font-bold text-space-void uppercase no-accents">ΜΑΙΡΗ</p>
+                            <p class="text-[11px] text-gray-400">31 Ιουλίου 2025 • 1 αξιολόγηση</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flex space-x-6 px-3" aria-hidden="true">
+                    <div class="w-80 bg-gray-50 p-8 rounded-3xl shadow-sm shrink-0 border border-gray-100 relative">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <div class="flex items-center gap-1 text-yellow-400 mb-1">
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                </div>
+                                <span class="font-bold text-space-void">10.0 / 10</span>
+                            </div>
+                            <img src="https://www.doctoranytime.gr/images/logo-rebranding.svg" class="h-4 opacity-50" alt="DA">
+                        </div>
+                        <p class="text-space-meteor text-sm mb-6 italic leading-relaxed">"Η Σαβίννα είναι εξαιρετική ψυχολόγος, με κατάρτιση. Κατάλαβε πολύ γρήγορα το πρόβλημα και αυτο μας έδωσε χρονο στην συνεδρία να συζητήσουμε εκτενώς το πρόβλημα και λύσεις. Σίγουρα θα συνεχίσω."</p>
+                        <div class="border-t border-gray-200 pt-4">
+                            <p class="text-xs font-bold text-space-void uppercase no-accents">MARIA</p>
+                            <p class="text-[11px] text-gray-400">08 Νοεμβρίου 2025 • 2 αξιολογήσεις</p>
+                        </div>
+                    </div>
+                    <div class="w-80 bg-gray-50 p-8 rounded-3xl shadow-sm shrink-0 border border-gray-100 relative">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <div class="flex items-center gap-1 text-yellow-400 mb-1">
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                </div>
+                                <span class="font-bold text-space-void">10.0 / 10</span>
+                            </div>
+                            <img src="https://www.doctoranytime.gr/images/logo-rebranding.svg" class="h-4 opacity-50" alt="DA">
+                        </div>
+                        <p class="text-space-meteor text-sm mb-6 italic leading-relaxed">"Δουλεύουμε μαζί εδώ και 3 χρόνια σχεδόν. Νομίζω δεν θα μπορούσα να βρω καταλληλότερη θεραπεύτρια. Η προσέγγιση της είναι άρτια, με εξαιρετικές γνώσεις και πάνω από όλα ανθρωπιά και κατανόηση."</p>
+                        <div class="border-t border-gray-200 pt-4">
+                            <p class="text-xs font-bold text-space-void uppercase no-accents">ΒΑΣΙΛΙΝΑ</p>
+                            <p class="text-[11px] text-gray-400">16 Οκτωβρίου 2025 • 1 αξιολόγηση</p>
+                        </div>
+                    </div>
+                    <div class="w-80 bg-gray-50 p-8 rounded-3xl shadow-sm shrink-0 border border-gray-100 relative">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <div class="flex items-center gap-1 text-yellow-400 mb-1">
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                </div>
+                                <span class="font-bold text-space-void">10.0 / 10</span>
+                            </div>
+                            <img src="https://www.doctoranytime.gr/images/logo-rebranding.svg" class="h-4 opacity-50" alt="DA">
+                        </div>
+                        <p class="text-space-meteor text-sm mb-6 italic leading-relaxed">"Από την πρώτη στιγμή μου ενέπνευσε εμπιστοσύνη και ασφάλεια. Πολύ βοηθητική στα θέματα τα οποία την χρειάστηκα."</p>
+                        <div class="border-t border-gray-200 pt-4">
+                            <p class="text-xs font-bold text-space-void uppercase no-accents">ΜΑΡΙΑ</p>
+                            <p class="text-[11px] text-gray-400">26 Σεπτεμβρίου 2025 • 1 αξιολόγηση</p>
+                        </div>
+                    </div>
+                    <div class="w-80 bg-gray-50 p-8 rounded-3xl shadow-sm shrink-0 border border-gray-100 relative">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <div class="flex items-center gap-1 text-yellow-400 mb-1">
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                </div>
+                                <span class="font-bold text-space-void">10.0 / 10</span>
+                            </div>
+                            <img src="https://www.doctoranytime.gr/images/logo-rebranding.svg" class="h-4 opacity-50" alt="DA">
+                        </div>
+                        <p class="text-space-meteor text-sm mb-6 italic leading-relaxed">"Κάνω συνεδρίες με την κυρία Εμιρζά καιρό. Με έχει βοηθήσει πολύ να εμπιστευτώ τον εαυτό μου, να διαχειρίζομαι το άγχος μου και να βελτιώσω τις σχέσεις μου."</p>
+                        <div class="border-t border-gray-200 pt-4">
+                            <p class="text-xs font-bold text-space-void uppercase no-accents">ΕΥΑΓΓΕΛΙΑ</p>
+                            <p class="text-[11px] text-gray-400">26 Σεπτεμβρίου 2025 • 1 αξιολόγηση</p>
+                        </div>
+                    </div>
+                    <div class="w-80 bg-gray-50 p-8 rounded-3xl shadow-sm shrink-0 border border-gray-100 relative">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <div class="flex items-center gap-1 text-yellow-400 mb-1">
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                </div>
+                                <span class="font-bold text-space-void">10.0 / 10</span>
+                            </div>
+                            <img src="https://www.doctoranytime.gr/images/logo-rebranding.svg" class="h-4 opacity-50" alt="DA">
+                        </div>
+                        <p class="text-space-meteor text-sm mb-6 italic leading-relaxed">"Ένιωσα πως μαζί της μπορώ να είμαι ο εαυτός μου, η βοήθεια που βασίζεται στην εμπειρία και τις γνώσεις της , με έκαναν να αγαπήσω το ταξίδι της θεραπείας."</p>
+                        <div class="border-t border-gray-200 pt-4">
+                            <p class="text-xs font-bold text-space-void uppercase no-accents">ΚΩΝΣΤΑΝΤΙΝΑ</p>
+                            <p class="text-[11px] text-gray-400">26 Σεπτεμβρίου 2025 • 1 αξιολόγηση</p>
+                        </div>
+                    </div>
+                    <div class="w-80 bg-gray-50 p-8 rounded-3xl shadow-sm shrink-0 border border-gray-100 relative">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <div class="flex items-center gap-1 text-yellow-400 mb-1">
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                </div>
+                                <span class="font-bold text-space-void">10.0 / 10</span>
+                            </div>
+                            <img src="https://www.doctoranytime.gr/images/logo-rebranding.svg" class="h-4 opacity-50" alt="DA">
+                        </div>
+                        <p class="text-space-meteor text-sm mb-6 italic leading-relaxed">"Εξαιρετική, έμπειρη, φιλική! Την εμπιστεύομαι 100%."</p>
+                        <div class="border-t border-gray-200 pt-4">
+                            <p class="text-xs font-bold text-space-void uppercase no-accents">ΓΙΩΡΓΟΣ</p>
+                            <p class="text-[11px] text-gray-400">05 Αυγούστου 2025 • 1 αξιολόγηση</p>
+                        </div>
+                    </div>
+                    <div class="w-80 bg-gray-50 p-8 rounded-3xl shadow-sm shrink-0 border border-gray-100 relative">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <div class="flex items-center gap-1 text-yellow-400 mb-1">
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                </div>
+                                <span class="font-bold text-space-void">10.0 / 10</span>
+                            </div>
+                            <img src="https://www.doctoranytime.gr/images/logo-rebranding.svg" class="h-4 opacity-50" alt="DA">
+                        </div>
+                        <p class="text-space-meteor text-sm mb-6 italic leading-relaxed">"Εξαιρετική επαγγελματίας και πολύ ζεστος άνθρωπος! Νιώθω ασφάλεια και κατανόηση σε κάθε συνεδρία και με έχει βοηθήσει ουσιαστικά. Τη συστήνω ανεπιφύλακτα!"</p>
+                        <div class="border-t border-gray-200 pt-4">
+                            <p class="text-xs font-bold text-space-void uppercase no-accents">ΝΤΙΑΝΑ</p>
+                            <p class="text-[11px] text-gray-400">05 Αυγούστου 2025 • 1 αξιολόγηση</p>
+                        </div>
+                    </div>
+                    <div class="w-80 bg-gray-50 p-8 rounded-3xl shadow-sm shrink-0 border border-gray-100 relative">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <div class="flex items-center gap-1 text-yellow-400 mb-1">
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                </div>
+                                <span class="font-bold text-space-void">10.0 / 10</span>
+                            </div>
+                            <img src="https://www.doctoranytime.gr/images/logo-rebranding.svg" class="h-4 opacity-50" alt="DA">
+                        </div>
+                        <p class="text-space-meteor text-sm mb-6 italic leading-relaxed">"Κέρδισε την εμπιστοσύνη μου από την πρώτη στιγμή. Ξέρει να ακούει και σου δίνει χώρο να βρεις τη δύναμή σου, όταν εσύ νιώθεις ότι δεν υπάρχει!"</p>
+                        <div class="border-t border-gray-200 pt-4">
+                            <p class="text-xs font-bold text-space-void uppercase no-accents">ΜΑΙΡΗ</p>
+                            <p class="text-[11px] text-gray-400">31 Ιουλίου 2025 • 1 αξιολόγηση</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="https://www.doctoranytime.gr/d/Psychologos/savvina-emirza" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 px-8 py-4 bg-white border-2 border-gray-100 rounded-full text-sm font-bold text-space-void hover:border-space-nebula hover:shadow-lg transition-all no-accents">
+                    ΔΙΑΒΑΣΤΕ ΠΕΡΙΣΣΟΤΕΡΑ ΣΤΟ <img src="https://www.doctoranytime.gr/images/logo-rebranding.svg" class="h-4 ml-1" alt="Doctoranytime">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="bg-[#0B0A14] text-white pt-24 pb-10 relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-[40rem] h-[40rem] bg-space-nebula/20 rounded-full blur-[100px] transform translate-x-1/3 -translate-y-1/3"></div>
+        <div class="absolute bottom-0 left-0 w-[30rem] h-[30rem] bg-space-stardust/10 rounded-full blur-[100px] transform -translate-x-1/2 translate-y-1/2"></div>
+        
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
+                
+                <div class="lg:col-span-2 reveal">
+                    <img src="https://github.com/agelmet/EMIRZA/blob/main/emlogo-2.png?raw=true" alt="Σαββίνα Εμιρζά Logo" class="w-16 h-16 rounded-full border border-white/20 mb-6">
+                    <h3 class="text-2xl font-serif mb-4">Σαββίνα Εμιρζά</h3>
+                    <p class="text-space-horizon max-w-sm mb-8 leading-relaxed">
+                        Η επούλωση ξεκινά με ένα βήμα. Επικοινωνήστε για να ορίσουμε την πρώτη σας συνεδρία σε ένα περιβάλλον απόλυτης αποδοχής.
+                    </p>
+                    <a href="https://www.doctoranytime.gr/d/Psychologos/savvina-emirza" target="_blank" class="inline-flex items-center justify-center bg-white text-space-void px-6 py-3 rounded-full font-bold hover:bg-space-peach transition-colors duration-300 shadow-lg no-accents text-sm tracking-wider">
+                        <img src="https://www.doctoranytime.gr/images/logo-rebranding.svg" alt="Doctoranytime" class="h-3 mr-3">
+                        ΚΛΕΙΣΤΕ ΡΑΝΤΕΒΟΥ
+                    </a>
+                </div>
+
+                <div class="reveal reveal-delay-1">
+                    <h4 class="text-sm font-bold text-space-blush mb-6 uppercase tracking-[0.15em] no-accents">ΣΤΟΙΧΕΙΑ ΕΠΙΚΟΙΝΩΝΙΑΣ</h4>
+                    <ul class="space-y-5 text-gray-300">
+                        <li class="flex items-start gap-4">
+                            <i data-lucide="map-pin" class="w-5 h-5 text-space-peach shrink-0 mt-0.5"></i>
+                            <span class="leading-relaxed">Γκινοσάτη 36,<br>Μεταμόρφωση, Αττική</span>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <i data-lucide="phone" class="w-5 h-5 text-space-peach shrink-0"></i>
+                            <a href="tel:+306985751270" class="hover:text-space-blush transition-colors text-lg font-medium tracking-wide">698 575 1270</a>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <i data-lucide="mail" class="w-5 h-5 text-space-peach shrink-0"></i>
+                            <a href="mailto:mairoula.skandali@gmail.com" class="hover:text-space-blush transition-colors text-sm">mairoula.skandali@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="reveal reveal-delay-2">
+                    <h4 class="text-sm font-bold text-space-blush mb-6 uppercase tracking-[0.15em] no-accents">ΩΡΑΡΙΟ ΛΕΙΤΟΥΡΓΙΑΣ</h4>
+                    <ul class="space-y-4 text-gray-300">
+                        <li class="flex items-center gap-4 border-b border-white/10 pb-4">
+                            <i data-lucide="clock" class="w-5 h-5 text-space-peach shrink-0"></i>
+                            <div>
+                                <span class="block text-sm font-bold no-accents tracking-wider text-white">ΔΕΥΤΕΡΑ - ΣΑΒΒΑΤΟ</span>
+                                <span class="text-sm text-space-stardust italic">Κατόπιν Ραντεβού</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 reveal">
+                <p class="text-space-horizon text-sm">© 2026 Σαββίνα Εμιρζά. Όλα τα δικαιώματα διατηρούνται.</p>
+                <p class="text-space-horizon text-sm">
+                    Designed by <a href="https://advonmedia.com" target="_blank" rel="noopener" class="text-white font-bold hover:text-space-peach transition-colors">Advon Media</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 1. Initialize Lucide Icons
+        lucide.createIcons();
+
+        // 2. Mobile Menu Toggle
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        mobileBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            mobileMenu.classList.toggle('flex');
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                mobileMenu.classList.remove('flex');
+            });
+        });
+
+        // 3. Navbar Scroll Effect (Glassmorphism adjustments)
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('py-2');
+                navbar.classList.remove('py-4');
+                navbar.querySelector('.glass-panel').classList.add('bg-white/95', 'shadow-soft');
+                navbar.querySelector('.glass-panel').classList.remove('border-white/40');
+            } else {
+                navbar.classList.add('py-4');
+                navbar.classList.remove('py-2');
+                navbar.querySelector('.glass-panel').classList.remove('bg-white/95', 'shadow-soft');
+                navbar.querySelector('.glass-panel').classList.add('border-white/40');
+            }
+        });
+
+        // 4. Scroll Reveal Animations (Intersection Observer)
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.15
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    observer.unobserve(entry.target); 
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal').forEach(el => {
+            observer.observe(el);
+        });
+
+        // 5. Lightbox Functionality for Space Gallery
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+
+        function openLightbox(imageSrc) {
+            lightboxImg.src = imageSrc;
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            lightbox.classList.remove('active');
+            setTimeout(() => {
+                lightboxImg.src = '';
+                document.body.style.overflow = '';
+            }, 400);
+        }
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+                closeLightbox();
+            }
+        });
+    </script>
+</body>
+</html>
